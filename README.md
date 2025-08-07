@@ -38,8 +38,8 @@ Hi! I'm **Daniel Rocha** (a.k.a. **D_R0x**), a passionate cybersecurity student 
 
 You can reach me via the [contact form on my portfolio](https://rocha-29.github.io/my_portfolio/#contact) or directly at:
 
-- ✉️ Email: `daniel.rocha.cyber@gmail.com`
-- 💼 LinkedIn: [linkedin.com/in/danielrocha-cyber](https://linkedin.com)
+- ✉️ Email: `danielrocha_29@icloud.com`
+- 💼 LinkedIn: [http://linkedin.com/in/daniel-r-ba8a61173](https://linkedin.com)
 
 ---
 
