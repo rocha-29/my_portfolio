@@ -1,0 +1,355 @@
+html, body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth; /* Desplazamiento suave */
+}
+
+body {
+    min-height: 200vh; /* Altura suficiente para desplazar */
+}
+
+.logo-container {
+    z-index: 1000; /* Aumenté el z-index para estar siempre encima */
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 36px;
+    color: #00b4d8;
+    opacity: 1;
+    user-select: none;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-weight: 700;
+    letter-spacing: 2px;
+    background: rgba(20, 20, 20, 0.8);
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #00b4d8;
+}
+
+.nav-menu {
+    z-index: 1000; /* Aumenté el z-index para estar siempre encima */
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.nav-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-menu li {
+    margin-left: 20px;
+}
+
+.nav-menu a {
+    color: #00b4d8;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    background: rgba(20, 20, 20, 0.8);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: block; /* Asegura que el área clickable sea completa */
+}
+
+.nav-menu a:hover {
+    background: #00b4d8;
+    color: #ffffff;
+}
+
+.text-container {
+    z-index: 500; /* Menor que el menú para no interferir */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    font-size: 64px;
+    color: #ffffff;
+    opacity: 0.9;
+    user-select: none;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: 700;
+    text-align: center;
+    pointer-events: none; /* Evita que bloquee clics */
+}
+
+.gradient-bg {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    overflow: hidden;
+    background: linear-gradient(45deg, rgb(10, 10, 20), rgb(0, 20, 50));
+    top: 0;
+    left: 0;
+    z-index: 1; /* Fondo detrás de todo */
+}
+
+.gradients-container {
+    width: 100%;
+    height: 100%;
+}
+
+.g1, .g2, .g3, .g4, .g5, .interactive {
+    position: absolute;
+    mix-blend-mode: screen;
+}
+
+.g1 {
+    background: linear-gradient(135deg, rgba(10, 50, 100, 0.7), transparent);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    width: 50%;
+    height: 50%;
+    top: calc(50% - 25%);
+    left: calc(50% - 25%);
+    animation: moveVertical 30s ease infinite;
+    opacity: 0.7;
+}
+
+.g2 {
+    background: linear-gradient(45deg, rgba(60, 20, 80, 0.7), transparent);
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    width: 50%;
+    height: 50%;
+    top: calc(50% - 25%);
+    left: calc(50% - 25%);
+    transform-origin: calc(50% - 300px);
+    animation: moveInCircle 20s reverse infinite;
+    opacity: 0.7;
+}
+
+.g3 {
+    background: linear-gradient(90deg, rgba(0, 80, 120, 0.7), transparent);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    width: 50%;
+    height: 50%;
+    top: calc(50% - 25% + 150px);
+    left: calc(50% - 25% - 400px);
+    transform-origin: calc(50% + 300px);
+    animation: moveInCircle 40s linear infinite;
+    opacity: 0.7;
+}
+
+.g4 {
+    background: linear-gradient(180deg, rgba(50, 0, 0, 0.7), transparent);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    width: 50%;
+    height: 50%;
+    top: calc(50% - 25%);
+    left: calc(50% - 25%);
+    transform-origin: calc(50% - 150px);
+    animation: moveHorizontal 40s ease infinite;
+    opacity: 0.6;
+}
+
+.g5 {
+    background: linear-gradient(270deg, rgba(30, 30, 30, 0.7), transparent);
+    clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+    width: 100%;
+    height: 100%;
+    top: calc(50% - 50%);
+    left: calc(50% - 50%);
+    transform-origin: calc(50% - 600px) calc(50% + 150px);
+    animation: moveInCircle 20s ease infinite;
+    opacity: 0.6;
+}
+
+.interactive {
+    background: radial-gradient(circle at center, rgba(0, 120, 180, 0.7) 0, transparent 70%);
+    width: 200px;
+    height: 200px;
+    top: -100px;
+    left: -100px;
+    opacity: 0.7;
+    transition: transform 0.1s ease;
+}
+
+@keyframes moveInCircle {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(180deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes moveVertical {
+    0% { transform: translateY(-50%); }
+    50% { transform: translateY(50%); }
+    100% { transform: translateY(-50%); }
+}
+
+@keyframes moveHorizontal {
+    0% { transform: translateX(-50%) translateY(-10%); }
+    50% { transform: translateX(50%) translateY(10%); }
+    100% { transform: translateX(-50%) translateY(-10%); }
+}
+
+main {
+    position: relative;
+    z-index: 10; /* Encima del fondo pero debajo del menú */
+    color: #ffffff;
+    padding: 0 20px;
+    background: rgba(0, 0, 0, 0.7);
+    margin-top: 100vh; /* Debajo de la bienvenida */
+}
+
+section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 80px 0 40px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h2 {
+    color: #00b4d8;
+    font-size: 2em;
+    border-bottom: 2px solid #00b4d8;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+/* BOTÓN HAMBURGUESA */
+.nav-toggle {
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1001;
+    background: none;
+    border: none;
+    color: #00b4d8;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+/* TARJETAS DE PROYECTOS */
+.project-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid #00b4d8;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    will-change: transform;
+    transform: perspective(1000px) translateZ(0);
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 180, 216, 0.3);
+    z-index: 2;
+}
+
+.project-card h3 {
+    color: #00b4d8;
+}
+.project-card a {
+    color: #00b4d8;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* FORMULARIO DE CONTACTO */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+input, textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+button[type="submit"] {
+    background: #00b4d8;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button[type="submit"]:hover {
+    background: #0093b8;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+        position: fixed;
+        top: 70px;
+        right: 20px;
+        background: rgba(20, 20, 20, 0.95);
+        border: 1px solid #00b4d8;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .nav-menu.active {
+        display: block;
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+    }
+
+    .nav-menu li {
+        margin: 10px 0;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .text-container {
+        font-size: 40px;
+        padding: 0 10px;
+    }
+
+    main {
+        padding: 0 10px;
+    }
+
+    section {
+        padding: 60px 0;
+    }
+}
+
+button[type="submit"] {
+    background: #00b4d8;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background: #0093b8;
+}
+

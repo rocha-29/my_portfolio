@@ -1,0 +1,17 @@
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Backup or temp files
+*.log
+*.tmp
+*.bak
+*~
+
+# Virtual environments
+venv/
+__pycache__/
+
+# VSCode
+.vscode/

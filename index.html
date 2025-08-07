@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>D_R0x - Cybersecurity Portfolio</title>
+
+  <!-- Meta SEO -->
+  <meta name="description" content="Explore the cybersecurity portfolio of Daniel Rocha (D_R0x) with tools like Port Scanner, Vulnerability Scanner, and Password Cracker." />
+  <meta name="keywords" content="Cybersecurity, Port Scanner, Vulnerability Scanner, Password Cracker, D_R0x, Daniel Rocha, Portfolio" />
+  <meta name="author" content="Daniel Rocha" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+  <!-- Open Graph (social media preview) -->
+  <meta property="og:title" content="D_R0x - Cybersecurity Portfolio" />
+  <meta property="og:description" content="Explore the cybersecurity portfolio of Daniel Rocha (D_R0x), featuring tools like Port Scanner, Vulnerability Scanner, and Password Cracker." />
+  <meta property="og:image" content="og-preview.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://rocha-29.github.io/my_portfolio/" />
+
+  <!-- CSS & Fonts -->
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="logo-container">D_R0x</div>
+
+  <button class="nav-toggle">☰</button>
+  <nav class="nav-menu">
+    <ul>
+      <li><a href="#about-me">About Me</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="text-container">¡Welcome!</div>
+
+  <div class="gradient-bg">
+    <div class="gradients-container">
+      <div class="g1"></div>
+      <div class="g2"></div>
+      <div class="g3"></div>
+      <div class="g4"></div>
+      <div class="g5"></div>
+      <div class="interactive"></div>
+    </div>
+  </div>
+
+  <main>
+    <section id="about-me" data-aos="fade-right">
+      <h2>About Me</h2>
+      <p>I’m Daniel Rocha, known as D_R0x, a passionate cybersecurity student currently pursuing a degree in System Cyber-Security Management at Fidelitas University...</p>
+      <!-- ...tu descripción completa continúa aquí -->
+    </section>
+
+    <section id="projects" data-aos="fade-up">
+      <h2>Projects</h2>
+
+      <div class="project-card">
+        <h3>Port Scanner</h3>
+        <p>Python script that scans for open ports on a target IP using sockets and multithreading.</p>
+        <a href="https://github.com/rocha-29/port-scanner" target="_blank">View on GitHub</a>
+      </div>
+
+      <div class="project-card">
+        <h3>Secure Login System</h3>
+        <p>Basic web login system with password hashing and input validation.</p>
+        <a href="https://github.com/rocha-29/secure_login_system" target="_blank">View on GitHub</a>
+      </div>
+
+      <div class="project-card">
+        <h3>Vulnerability Scanner</h3>
+        <p>Web scanner that detects missing headers, insecure methods, tech disclosures, and stores results with risk assessment.</p>
+        <a href="https://github.com/rocha-29/vulnerability_scanner" target="_blank">View on GitHub</a>
+      </div>
+
+      <div class="project-card">
+        <h3>Password Cracker</h3>
+        <p>Educational Python tool to demonstrate SHA-256 password cracking using dictionary and brute-force attacks.</p>
+        <a href="https://github.com/rocha-29/password_cracker" target="_blank">View on GitHub</a>
+      </div>
+    </section>
+
+    <section id="contact" data-aos="fade-up">
+      <h2>Contact</h2>
+      <form id="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+  </script>
+</body>
+</html>
