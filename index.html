@@ -1,111 +1,557 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>D_R0x - Cybersecurity Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
 
-  <!-- Meta SEO -->
-  <meta name="description" content="Explore the cybersecurity portfolio of Daniel Rocha (D_R0x) with tools like Port Scanner, Vulnerability Scanner, and Password Cracker." />
-  <meta name="keywords" content="Cybersecurity, Port Scanner, Vulnerability Scanner, Password Cracker, D_R0x, Daniel Rocha, Portfolio" />
-  <meta name="author" content="Daniel Rocha" />
+  <title>Daniel Rocha | Security-focused engineer: PKI, TLS, incident response, detection</title>
+  <meta name="description" content="Daniel Rocha is a security-focused engineer in San José, Costa Rica. He comes from senior production support in banking and at a public Certificate Authority, and does hands-on lab work in TLS and detection.">
+  <meta name="author" content="Daniel Rocha">
+  <link rel="canonical" href="https://rocha-29.github.io/my_portfolio/">
 
-  <!-- Favicon -->
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Daniel Rocha">
+  <meta property="og:title" content="Daniel Rocha | Security-focused engineer">
+  <meta property="og:description" content="PKI and TLS, incident response and detection. Senior production support in banking and at a public Certificate Authority, building toward security engineering.">
+  <meta property="og:url" content="https://rocha-29.github.io/my_portfolio/">
+  <meta property="og:image" content="https://rocha-29.github.io/my_portfolio/assets/og-preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Daniel Rocha, security-focused engineer: PKI and TLS, incident response, detection.">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Daniel Rocha | Security-focused engineer">
+  <meta name="twitter:description" content="PKI and TLS, incident response and detection. Senior production support in banking and at a public Certificate Authority, building toward security engineering.">
+  <meta name="twitter:image" content="https://rocha-29.github.io/my_portfolio/assets/og-preview.png">
+  <meta name="twitter:image:alt" content="Daniel Rocha, security-focused engineer: PKI and TLS, incident response, detection.">
 
-  <!-- Open Graph (social media preview) -->
-  <meta property="og:title" content="D_R0x - Cybersecurity Portfolio" />
-  <meta property="og:description" content="Explore the cybersecurity portfolio of Daniel Rocha (D_R0x), featuring tools like Port Scanner, Vulnerability Scanner, and Password Cracker." />
-  <meta property="og:image" content="og-preview.png" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://rocha-29.github.io/my_portfolio/" />
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#0b1622">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/theme.js"></script>
 
-  <!-- CSS & Fonts -->
-  <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Daniel Rocha",
+    "alternateName": "D_R0x",
+    "url": "https://rocha-29.github.io/my_portfolio/",
+    "image": "https://rocha-29.github.io/my_portfolio/assets/og-preview.png",
+    "email": "mailto:danielrocha_29@icloud.com",
+    "jobTitle": "Senior Technical Support Engineer",
+    "description": "Security-focused engineer working in PKI and TLS, incident response and detection.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "San José",
+      "addressCountry": "CR"
+    },
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Universidad Fidélitas"
+    },
+    "worksFor": {
+      "@type": "Organization",
+      "name": "SSL.com"
+    },
+    "knowsLanguage": ["es", "en"],
+    "knowsAbout": ["Public key infrastructure", "TLS", "OpenSSL", "Certificate lifecycle management", "Incident response", "Log analysis", "SIEM", "Splunk", "Python", "SQL"],
+    "sameAs": [
+      "https://www.linkedin.com/in/daniel-r-ba8a61173",
+      "https://github.com/rocha-29"
+    ]
+  }
+  </script>
 </head>
-
 <body>
-  <div class="logo-container">D_R0x</div>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
-  <button class="nav-toggle">☰</button>
-  <nav class="nav-menu">
-    <ul>
-      <li><a href="#about-me">About Me</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <div class="text-container">¡Welcome!</div>
-
-  <div class="gradient-bg">
-    <div class="gradients-container">
-      <div class="g1"></div>
-      <div class="g2"></div>
-      <div class="g3"></div>
-      <div class="g4"></div>
-      <div class="g5"></div>
-      <div class="interactive"></div>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="wordmark" href="#top" aria-label="D_R0x, Daniel Rocha: back to top">
+        <img src="assets/favicon.svg" alt="" width="28" height="28">
+        <span>D_R0x</span>
+      </a>
+      <nav class="site-nav" aria-label="Main">
+        <button type="button" class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="site-menu" hidden>Menu</button>
+        <ul id="site-menu" class="site-menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#labs">Labs</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button type="button" class="theme-toggle" id="theme-toggle" hidden><span id="theme-toggle-label">Light theme</span></button>
     </div>
-  </div>
+  </header>
 
-  <main>
-    <section id="about-me" data-aos="fade-right">
-      <h2>About Me</h2>
-      <p>I’m Daniel Rocha, known as D_R0x, a passionate cybersecurity student currently pursuing a degree in System Cyber-Security Management at Fidelitas University. With a strong foundation in technical support, web design, and system administration, I bring a blend of hands-on experience and a relentless commitment to mastering the ever-evolving field of cybersecurity. Certified by Cisco, Google, and CTP Santo Cristo de Esquipulas, I am also actively preparing for industry-leading credentials such as CompTIA Security+ and ISC2, enhancing my expertise in threat management, risk analysis, and intrusion detection.</p>
-      <p>My professional journey includes roles as a Client Technical Engineer ll, SME, Backup Team Lead, where I’ve honed my skills in troubleshooting complex systems, leading high-performing teams, and ensuring compliance with standards like GDPR and CIA. I’ve designed tailored solutions to boost customer satisfaction, automated processes to increase efficiency by 15%, and collaborated across departments to streamline operations—all while adhering to Zero Trust security principles. Beyond technical prowess, I’m Scrum Fundamentals Certified, bringing agile methodologies to project management and team coordination.</p>
-      <p>Driven by a curiosity for vulnerabilities and a passion for secure systems, I thrive on continuous learning and tackling challenges in the digital landscape. My goal is to contribute to a technology-driven, security-conscious organization, leveraging my skills to protect and innovate in an increasingly connected world.</p>
+  <main id="main" tabindex="-1">
+
+    <!-- Hero -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <h1 id="hero-title">Daniel Rocha</h1>
+          <p class="positioning">Security-focused engineer working in PKI and TLS, incident response and detection.</p>
+          <p class="location">San José, Costa Rica</p>
+          <p class="value">I come from senior production support: Level 2 for banking applications, and now TLS and certificate support at a public Certificate Authority. I am building toward security engineering through hands-on work and the labs planned on this page.</p>
+          <ul class="cta-list">
+            <li><a class="button button--primary" href="#labs">View labs</a></li>
+            <li><a class="button" href="assets/Daniel_Rocha_Resume.pdf" download>Download résumé <span class="button-note">PDF</span></a></li>
+            <li><a class="button button--quiet" href="https://www.linkedin.com/in/daniel-r-ba8a61173" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a class="button button--quiet" href="https://github.com/rocha-29" rel="noopener noreferrer">GitHub</a></li>
+          </ul>
+        </div>
+
+        <figure class="certificate" aria-labelledby="certificate-caption">
+          <p class="certificate-command" aria-hidden="true">$ openssl x509 -in daniel-rocha.pem -noout -text</p>
+          <dl class="certificate-fields">
+            <div class="field">
+              <dt>Subject</dt>
+              <dd>CN = Daniel Rocha, L = San José, C = CR</dd>
+            </div>
+            <div class="field">
+              <dt>Issuer</dt>
+              <dd>O = Universidad Fidélitas, OU = B.Sc. Computer Systems Engineering, Cybersecurity</dd>
+            </div>
+            <div class="field">
+              <dt>Not Before</dt>
+              <dd>2024, earliest role on my résumé</dd>
+            </div>
+            <div class="field">
+              <dt>Not After</dt>
+              <dd>Apr 2027, when the degree is expected</dd>
+            </div>
+            <div class="field">
+              <dt>Subject Alternative Name</dt>
+              <dd>PKI, TLS, OpenSSL, certificate lifecycle, incident response, log analysis, Splunk, Python, SQL</dd>
+            </div>
+            <div class="field">
+              <dt>Key Usage</dt>
+              <dd>Production support, root cause analysis, on-call</dd>
+            </div>
+            <div class="field">
+              <dt>Certificate Policies</dt>
+              <dd>ISC2 CC, Cisco CyberOps Associate</dd>
+            </div>
+          </dl>
+          <figcaption id="certificate-caption">My profile, laid out like a decoded X.509 certificate. Not a real certificate.</figcaption>
+        </figure>
+      </div>
     </section>
 
-    <section id="projects" data-aos="fade-up">
-      <h2>Projects</h2>
+    <!-- About -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="wrap section-grid">
+        <div class="section-rail">
+          <h2 id="about-title">About</h2>
+        </div>
+        <div class="section-body">
+          <div class="prose">
+            <p>I am a Senior Technical Support Engineer at SSL.com, a public Certificate Authority, where I help customers install, fix and renew TLS certificates on production servers. Before that I provided Level 2 support for Fiserv Integrated Teller at Infinite Computer Solutions, on call for production incidents across several financial institutions. I am finishing a B.Sc. in Computer Systems Engineering with a Cybersecurity focus at Universidad Fidélitas, and I hold the ISC2 CC and Cisco CyberOps Associate certifications. My goal is a security engineering role, and the hands-on work and planned labs below are how I intend to close the gap between supporting systems and securing them.</p>
+          </div>
 
-      <div class="project-card">
-        <h3>Port Scanner</h3>
-        <p>Python script that scans for open ports on a target IP using sockets and multithreading.</p>
-        <a href="https://github.com/rocha-29/port-scanner" target="_blank">View on GitHub</a>
-      </div>
-
-      <div class="project-card">
-        <h3>Secure Login System</h3>
-        <p>Basic web login system with password hashing and input validation.</p>
-        <a href="https://github.com/rocha-29/secure_login_system" target="_blank">View on GitHub</a>
-      </div>
-
-      <div class="project-card">
-        <h3>Vulnerability Scanner</h3>
-        <p>Web scanner that detects missing headers, insecure methods, tech disclosures, and stores results with risk assessment.</p>
-        <a href="https://github.com/rocha-29/vulnerability_scanner" target="_blank">View on GitHub</a>
-      </div>
-
-      <div class="project-card">
-        <h3>Password Cracker</h3>
-        <p>Educational Python tool to demonstrate SHA-256 password cracking using dictionary and brute-force attacks.</p>
-        <a href="https://github.com/rocha-29/password_cracker" target="_blank">View on GitHub</a>
+          <h3 class="subhead">What I bring</h3>
+          <ul class="bring-list">
+            <li>
+              <h4>PKI and TLS in production</h4>
+              <p>Daily work with certificates on Apache, Nginx, IIS and Tomcat: CSRs, key mismatches, JKS and PKCS12 keystores, domain validation, and CA/Browser Forum rules.</p>
+            </li>
+            <li>
+              <h4>Incident response and root cause</h4>
+              <p>On-call rotation for banking applications, resolving production database incidents with SQL and log analysis, then finding the cause so they do not come back.</p>
+            </li>
+            <li>
+              <h4>Automation</h4>
+              <p>I built an internal AI support assistant at Infinite Computer Solutions that improved resolution quality and shortened onboarding. I script in Python and SQL.</p>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
 
-    <section id="contact" data-aos="fade-up">
-      <h2>Contact</h2>
-      <form id="contact-form">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
-        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-        <button type="submit">Send</button>
-      </form>
+    <!-- Labs -->
+    <section class="section" id="labs" aria-labelledby="labs-title">
+      <div class="wrap section-grid">
+        <div class="section-rail">
+          <h2 id="labs-title">Labs and projects</h2>
+          <p class="rail-note">Every entry carries its real status. Nothing here is marked done until it is published.</p>
+        </div>
+        <div class="section-body">
+          <div class="filters" id="lab-filters" role="group" aria-label="Filter labs by category" hidden></div>
+          <p class="visually-hidden" id="lab-filter-status" role="status" aria-live="polite"></p>
+
+          <div id="labs-root">
+      <!-- BEGIN:labs -->
+      <section class="lab-group lab-group--featured" id="labs-featured" aria-labelledby="labs-featured-title">
+        <h3 id="labs-featured-title">Featured labs</h3>
+        <p class="group-note">Three labs I have planned and not started yet. The descriptions are design goals, not results. Each gets a repository and a full write-up once it is built.</p>
+        <ul class="lab-list">
+        <li class="lab" id="flagship-1" data-category="PKI/TLS">
+          <div class="lab-head">
+            <h4 class="lab-title">Private PKI as code: ACME, mTLS and 24-hour certificates</h4>
+            <p class="lab-meta"><span class="category">PKI/TLS</span> <span class="badge badge--planned">Planned</span></p>
+          </div>
+          <p class="lab-summary">Goal: a two-tier internal CA on step-ca that will issue short-lived certificates over ACME to Nginx, Apache and Tomcat, with mutual TLS between services and no manual renewals.</p>
+          <ul class="lab-highlights">
+            <li>Offline root and online intermediate, with a written design note on lifetimes and revocation</li>
+            <li>Expiry and renewal metrics with alerting, plus CA-outage failure drills</li>
+            <li>Planned around the CA/Browser Forum move to 100-day and 47-day certificates</li>
+          </ul>
+          <ul class="tags" aria-label="Tools and topics">
+            <li>step-ca</li>
+            <li>ACME</li>
+            <li>mTLS</li>
+            <li>YubiKey PIV</li>
+            <li>Prometheus</li>
+            <li>Grafana</li>
+          </ul>
+        </li>
+        <li class="lab" id="flagship-2" data-category="Detection">
+          <div class="lab-head">
+            <h4 class="lab-title">Detection-as-code pipeline with attack simulation</h4>
+            <p class="lab-meta"><span class="category">Detection</span> <span class="badge badge--planned">Planned</span></p>
+          </div>
+          <p class="lab-summary">Goal: versioned Sigma rules, tested in CI against recorded attack telemetry and deployed to Splunk, each mapped to MITRE ATT&amp;CK with a runbook.</p>
+          <ul class="lab-highlights">
+            <li>Each rule ships with true-positive and benign test fixtures</li>
+            <li>GitHub Actions lints, tests, converts and deploys rules on merge</li>
+            <li>ATT&amp;CK Navigator coverage layer and false-positive tuning notes</li>
+          </ul>
+          <ul class="tags" aria-label="Tools and topics">
+            <li>Splunk</li>
+            <li>Sigma</li>
+            <li>Sysmon</li>
+            <li>Atomic Red Team</li>
+            <li>GitHub Actions</li>
+            <li>MITRE ATT&amp;CK</li>
+          </ul>
+        </li>
+        <li class="lab" id="flagship-3" data-category="Cloud">
+          <div class="lab-head">
+            <h4 class="lab-title">AWS security baseline in Terraform, attacked and detected</h4>
+            <p class="lab-meta"><span class="category">Cloud</span> <span class="badge badge--planned">Planned</span></p>
+          </div>
+          <p class="lab-summary">Goal: a hardened AWS account defined entirely in Terraform, then tested with simulated cloud attacks to check that logging, detections and automated remediation hold up.</p>
+          <ul class="lab-highlights">
+            <li>Least-privilege IAM with no long-lived keys, IMDSv2 and SSM instead of SSH</li>
+            <li>Before and after posture scans with Prowler</li>
+            <li>CloudTrail detections and Lambda auto-remediation for simulated attack techniques</li>
+          </ul>
+          <ul class="tags" aria-label="Tools and topics">
+            <li>AWS</li>
+            <li>Terraform</li>
+            <li>CloudTrail</li>
+            <li>GuardDuty</li>
+            <li>Prowler</li>
+            <li>Lambda</li>
+          </ul>
+        </li>
+        </ul>
+      </section>
+      <section class="lab-group lab-group--rows" id="labs-hands-on" aria-labelledby="labs-hands-on-title">
+        <h3 id="labs-hands-on-title">Hands-on work</h3>
+        <p class="group-note">Work I have done but not yet published. Write-ups are on the way.</p>
+        <ul class="lab-list">
+        <li class="lab" id="tls-deployment" data-category="PKI/TLS">
+          <div class="lab-head">
+            <h4 class="lab-title">TLS certificate deployment on four web servers</h4>
+            <p class="lab-meta"><span class="category">PKI/TLS</span> <span class="badge badge--writeup">Write-up in progress</span></p>
+          </div>
+          <p class="lab-summary">Certificates deployed on Apache, Nginx, IIS and Tomcat running on AWS EC2: CSR generation, chain assembly, and JKS and PKCS12 keystores.</p>
+          <ul class="tags" aria-label="Tools and topics">
+            <li>Apache</li>
+            <li>Nginx</li>
+            <li>IIS</li>
+            <li>Tomcat</li>
+            <li>AWS EC2</li>
+            <li>OpenSSL</li>
+          </ul>
+        </li>
+        <li class="lab" id="snort-iptables" data-category="Detection">
+          <div class="lab-head">
+            <h4 class="lab-title">Snort IDS rules with iptables</h4>
+            <p class="lab-meta"><span class="category">Detection</span> <span class="badge badge--writeup">Write-up in progress</span></p>
+          </div>
+          <p class="lab-summary">Custom Snort IDS rules written and tested alongside iptables firewall rules.</p>
+          <ul class="tags" aria-label="Tools and topics">
+            <li>Snort</li>
+            <li>iptables</li>
+            <li>IDS</li>
+          </ul>
+        </li>
+        <li class="lab" id="security-onion-rig-ek" data-category="Detection">
+          <div class="lab-head">
+            <h4 class="lab-title">Malware traffic analysis in Security Onion</h4>
+            <p class="lab-meta"><span class="category">Detection</span> <span class="badge badge--writeup">Write-up in progress</span></p>
+          </div>
+          <p class="lab-summary">Analysis of a RIG Exploit Kit infection capture in Security Onion, with log normalization in AWK.</p>
+          <ul class="tags" aria-label="Tools and topics">
+            <li>Security Onion</li>
+            <li>RIG Exploit Kit</li>
+            <li>AWK</li>
+            <li>Traffic analysis</li>
+          </ul>
+        </li>
+        <li class="lab" id="hack-the-box" data-category="Offensive">
+          <div class="lab-head">
+            <h4 class="lab-title">Hack The Box practice</h4>
+            <p class="lab-meta"><span class="category">Offensive</span> <span class="badge badge--writeup">Write-up in progress</span></p>
+          </div>
+          <p class="lab-summary">Ongoing practice on Hack The Box to build offensive security fundamentals.</p>
+          <ul class="tags" aria-label="Tools and topics">
+            <li>Hack The Box</li>
+          </ul>
+        </li>
+        </ul>
+      </section>
+      <section class="lab-group lab-group--rows" id="labs-earlier" aria-labelledby="labs-earlier-title">
+        <h3 id="labs-earlier-title">Earlier projects (2025)</h3>
+        <p class="group-note">Small Python learning projects from 2025. They are simple on purpose, and the code is public.</p>
+        <ul class="lab-list">
+        <li class="lab" id="port-scanner" data-category="Offensive">
+          <div class="lab-head">
+            <h4 class="lab-title">port-scanner</h4>
+            <p class="lab-meta"><span class="category">Offensive</span> <span class="badge badge--published">Published</span></p>
+          </div>
+          <p class="lab-summary">Multithreaded TCP connect scanner in Python.</p>
+          <ul class="tags" aria-label="Tools and topics">
+            <li>Python</li>
+            <li>Sockets</li>
+            <li>Threading</li>
+          </ul>
+          <p class="lab-links">
+            <a href="https://github.com/rocha-29/port-scanner" rel="noopener noreferrer" aria-label="View the repository for port-scanner">View the repository</a>
+          </p>
+        </li>
+        <li class="lab" id="secure-login-system" data-category="AppSec">
+          <div class="lab-head">
+            <h4 class="lab-title">secure_login_system</h4>
+            <p class="lab-meta"><span class="category">AppSec</span> <span class="badge badge--published">Published</span></p>
+          </div>
+          <p class="lab-summary">Flask login demo with Werkzeug password hashing, a password policy and a Fernet-encrypted user store.</p>
+          <ul class="tags" aria-label="Tools and topics">
+            <li>Python</li>
+            <li>Flask</li>
+            <li>Werkzeug</li>
+            <li>Fernet</li>
+          </ul>
+          <p class="lab-links">
+            <a href="https://github.com/rocha-29/secure_login_system" rel="noopener noreferrer" aria-label="View the repository for secure_login_system">View the repository</a>
+          </p>
+        </li>
+        <li class="lab" id="security-header-checker" data-category="AppSec">
+          <div class="lab-head">
+            <h4 class="lab-title">vulnerability_scanner</h4>
+            <p class="lab-meta"><span class="category">AppSec</span> <span class="badge badge--published">Published</span></p>
+          </div>
+          <p class="lab-summary">A security header checker: reads HTTP security headers and the server banner of a target URL. Despite the repository name, it is not a full vulnerability scanner.</p>
+          <ul class="tags" aria-label="Tools and topics">
+            <li>Python</li>
+            <li>HTTP headers</li>
+          </ul>
+          <p class="lab-links">
+            <a href="https://github.com/rocha-29/vulnerability_scanner" rel="noopener noreferrer" aria-label="View the repository for vulnerability_scanner">View the repository</a>
+          </p>
+        </li>
+        <li class="lab" id="password-cracker" data-category="Offensive">
+          <div class="lab-head">
+            <h4 class="lab-title">password_cracker</h4>
+            <p class="lab-meta"><span class="category">Offensive</span> <span class="badge badge--published">Published</span></p>
+          </div>
+          <p class="lab-summary">Educational SHA-256 dictionary and brute-force demo.</p>
+          <ul class="tags" aria-label="Tools and topics">
+            <li>Python</li>
+            <li>SHA-256</li>
+            <li>Educational</li>
+          </ul>
+          <p class="lab-links">
+            <a href="https://github.com/rocha-29/password_cracker" rel="noopener noreferrer" aria-label="View the repository for password_cracker">View the repository</a>
+          </p>
+        </li>
+        </ul>
+      </section>
+      <!-- END:labs -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section" id="experience" aria-labelledby="experience-title">
+      <div class="wrap section-grid">
+        <div class="section-rail">
+          <h2 id="experience-title">Experience</h2>
+        </div>
+        <div class="section-body">
+          <ol class="timeline">
+            <li class="role">
+              <p class="role-dates"><time datetime="2026-03">Mar 2026</time> to present</p>
+              <div class="role-body">
+                <h3>Senior Technical Support Engineer</h3>
+                <p class="role-org">SSL.com, a public Certificate Authority. Contract, remote.</p>
+                <ul>
+                  <li>Install, configure and renew SSL/TLS certificates on Apache, Nginx, IIS and Tomcat in customer production environments.</li>
+                  <li>Troubleshoot CSR generation, private-key mismatches, JKS and PKCS12 keystores, and HTTP and DNS domain validation.</li>
+                  <li>Advise on certificate types (DV, OV, EV, IV), PKI best practices, renewal automation and CA/Browser Forum compliance.</li>
+                  <li>Deploy YubiKey-based certificate provisioning, and escalate complex TLS incidents across teams.</li>
+                </ul>
+              </div>
+            </li>
+            <li class="role">
+              <p class="role-dates"><time datetime="2025-05">May 2025</time> to <time datetime="2026-03">Mar 2026</time></p>
+              <div class="role-body">
+                <h3>Senior Technical Support Engineer II, Banking Applications</h3>
+                <p class="role-org">Infinite Computer Solutions. Escazú, Costa Rica, hybrid.</p>
+                <ul>
+                  <li>Level 2 support for Fiserv Integrated Teller across multiple financial institutions.</li>
+                  <li>On-call rotation resolving production database incidents with SQL queries and log analysis.</li>
+                  <li>Troubleshot application behavior and Windows Server issues, and installed, configured and maintained application servers.</li>
+                  <li>Built an internal AI-based support assistant that improved resolution quality, reduced handling time and sped up new-hire onboarding.</li>
+                </ul>
+              </div>
+            </li>
+            <li class="role">
+              <p class="role-dates"><time datetime="2024-11">Nov 2024</time> to <time datetime="2025-05">May 2025</time></p>
+              <div class="role-body">
+                <h3>Technical Support Specialist</h3>
+                <p class="role-org">Movate. Heredia, Costa Rica.</p>
+                <ul>
+                  <li>Resolved POS software and hardware issues.</li>
+                  <li>Managed user accounts, permissions and access rights under Zero Trust principles.</li>
+                  <li>Used root cause analysis to eliminate recurring incidents.</li>
+                </ul>
+              </div>
+            </li>
+            <li class="role">
+              <p class="role-dates"><time datetime="2024">2024</time> to present</p>
+              <div class="role-body">
+                <h3>Independent IT and Cybersecurity Consultant</h3>
+                <p class="role-org">Freelance, alongside full-time work. Costa Rica.</p>
+                <ul>
+                  <li>End-to-end IT for small businesses: endpoints, networks and servers.</li>
+                  <li>Security assessments and hardening: access control, patching and Zero Trust practices.</li>
+                  <li>The full client lifecycle, from scoping to documentation and follow-up.</li>
+                </ul>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications and education -->
+    <section class="section" id="certifications" aria-labelledby="certifications-title">
+      <div class="wrap section-grid">
+        <div class="section-rail">
+          <h2 id="certifications-title">Certifications and education</h2>
+        </div>
+        <div class="section-body">
+          <h3 class="subhead subhead--first">Certifications</h3>
+          <ul class="cert-list" id="certs-root">
+      <!-- BEGIN:certs -->
+        <li class="cert">
+          <span class="cert-name">Certified in Cybersecurity (CC)</span>
+          <span class="cert-issuer">ISC2</span>
+          <span class="cert-date">Jan 2026</span>
+        </li>
+        <li class="cert">
+          <span class="cert-name">CyberOps Associate</span>
+          <span class="cert-issuer">Cisco</span>
+          <span class="cert-date">Jan 2026</span>
+        </li>
+        <li class="cert">
+          <span class="cert-name">Splunk Fundamentals</span>
+          <span class="cert-issuer">Splunk</span>
+          <span class="cert-date">Nov 2025</span>
+        </li>
+        <li class="cert">
+          <span class="cert-name">Cloud Computing Fundamentals</span>
+          <span class="cert-issuer">IBM</span>
+          <span class="cert-date">Jun 2025</span>
+        </li>
+        <li class="cert">
+          <span class="cert-name">Junior Cybersecurity Analyst</span>
+          <span class="cert-issuer">Cisco</span>
+          <span class="cert-date">Apr 2025</span>
+        </li>
+      <!-- END:certs -->
+          </ul>
+          <p class="toward"><strong>Currently working toward:</strong> CompTIA Security+ and eJPT. Both are planned and not yet earned.</p>
+
+          <h3 class="subhead">Education</h3>
+          <div class="education">
+            <p class="education-degree">B.Sc. in Computer Systems Engineering, Cybersecurity</p>
+            <p class="education-school">Universidad Fidélitas. Expected April 2027.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="wrap section-grid">
+        <div class="section-rail">
+          <h2 id="skills-title">Skills</h2>
+        </div>
+        <div class="section-body">
+          <dl class="skills">
+            <div class="skill-group">
+              <dt>Security</dt>
+              <dd>SSL/TLS, PKI, OpenSSL, certificate lifecycle management, YubiKey and hardware security keys, identity and access management, Zero Trust, SIEM, incident response, log analysis</dd>
+            </div>
+            <div class="skill-group">
+              <dt>Platforms and tools</dt>
+              <dd>Splunk, Wireshark, Microsoft SQL Server, Windows Server, Linux, Microsoft 365, Active Directory, Apache, Nginx, IIS, Tomcat, AWS EC2</dd>
+            </div>
+            <div class="skill-group">
+              <dt>Scripting and automation</dt>
+              <dd>Python, SQL, AI implementation and automation</dd>
+            </div>
+            <div class="skill-group">
+              <dt>Languages</dt>
+              <dd>Spanish (native), English (professional)</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section--contact" id="contact" aria-labelledby="contact-title">
+      <div class="wrap section-grid">
+        <div class="section-rail">
+          <h2 id="contact-title">Contact</h2>
+        </div>
+        <div class="section-body">
+          <p class="contact-lead">Open to Security Engineer, PKI and SOC roles, remote or in Costa Rica.</p>
+          <p class="contact-email"><a href="mailto:danielrocha_29@icloud.com">danielrocha_29@icloud.com</a></p>
+          <ul class="contact-links">
+            <li><a href="https://www.linkedin.com/in/daniel-r-ba8a61173" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://github.com/rocha-29" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="assets/Daniel_Rocha_Resume.pdf" download>Download résumé (PDF)</a></li>
+          </ul>
+          <p class="contact-location">San José, Costa Rica</p>
+        </div>
+      </div>
     </section>
   </main>
 
-  <!-- JS -->
-  <script src="script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 800,
-      once: true
-    });
-  </script>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>© 2026 Daniel Rocha</p>
+      <p class="footer-build"><strong>How this site is built:</strong> in plain static HTML, CSS and JavaScript, with no framework. No trackers, no third-party requests, and a strict Content Security Policy that only allows files from this site.</p>
+      <p><a href="https://github.com/rocha-29/my_portfolio" rel="noopener noreferrer">View the source on GitHub</a></p>
+    </div>
+  </footer>
+
+  <script src="js/data.js" defer></script>
+  <script src="js/render.js" defer></script>
+  <script src="js/main.js" defer></script>
 </body>
 </html>

@@ -1,0 +1,5 @@
+# Security contact for https://rocha-29.github.io/my_portfolio/
+Contact: mailto:danielrocha_29@icloud.com
+Expires: 2027-11-11T00:00:00.000Z
+Preferred-Languages: en, es
+Canonical: https://rocha-29.github.io/my_portfolio/.well-known/security.txt

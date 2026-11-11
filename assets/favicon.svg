@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="DR monogram">
+  <rect width="64" height="64" rx="12" fill="#0b1622"/>
+  <rect x="1.5" y="1.5" width="61" height="61" rx="10.5" fill="none" stroke="#00b4d8" stroke-width="3"/>
+  <path d="M13 18h9.5c8.2 0 13.5 5.4 13.5 14s-5.300 14-13.5 14H13zm6 5.200v17.600h3.200c4.800 0 7.600-3.300 7.600-8.800s-2.800-8.800-7.600-8.800z" fill="#e8eef5"/>
+  <path d="M39 18h8.300c5 0 8.200 3 8.200 7.700 0 3.500-1.800 6-4.700 7.100L56.500 46h-6.500l-5-12.200H45V46h-6zm6 5v6.300h2c2.200 0 3.500-1.200 3.500-3.200S49.200 23 47 23z" fill="#00b4d8"/>
+</svg>
