@@ -76,7 +76,7 @@ Twitter image URLs and the JSON-LD block in `index.html`; `robots.txt`; `sitemap
 - [ ] Replace the three featured labs (`flagship-1..3`) with final content, repository and write-up links.
 - [ ] Add links to the "Hands-on work" entries as each write-up is published, and change their status.
 - [ ] Move Security+ and eJPT from "working toward" into `certifications` once earned.
-- [ ] The résumé PDF contains your phone number. The HTML does not. Replace
+- [ ] The resume PDF contains your phone number. The HTML does not. Replace
       `assets/Daniel_Rocha_Resume.pdf` with a version without it if you do not want it public.
 - [ ] Update `Expires` in `.well-known/security.txt` before 11 Nov 2027.
 - [ ] Update `lastmod` in `sitemap.xml` after significant changes.
