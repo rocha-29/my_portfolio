@@ -75,7 +75,7 @@ Twitter image URLs and the JSON-LD block in `index.html`; `robots.txt`; `sitemap
 - [ ] Add `verifyUrl` for each certification in `js/data.js` (ISC2, Cisco via Credly, Splunk, IBM).
 - [ ] Replace the three featured labs (`flagship-1..3`) with final content, repository and write-up links.
 - [ ] Add links to the "Hands-on work" entries as each write-up is published, and change their status.
-- [ ] Move Security+ and eJPT from "working toward" into `certifications` once earned.
+- [ ] Move Security+ and PenTest+ from "working toward" into `certifications` once earned.
 - [ ] The resume PDF contains your phone number. The HTML does not. Replace
       `assets/Daniel_Rocha_Resume.pdf` with a version without it if you do not want it public.
 - [ ] Update `Expires` in `.well-known/security.txt` before 11 Nov 2027.
