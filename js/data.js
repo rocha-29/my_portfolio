@@ -76,10 +76,10 @@ window.PORTFOLIO = {
         {
           id: "tls-deployment",
           title: "TLS certificate deployment on four web servers",
-          summary: "Certificates deployed on Apache, Nginx, IIS and Tomcat running on AWS EC2: CSR generation, chain assembly, and JKS and PKCS12 keystores.",
+          summary: "Certificates deployed on Apache, Nginx, IIS and Tomcat: CSR generation, chain assembly, and JKS and PKCS12 keystores.",
           category: "PKI/TLS",
           status: "Write-up in progress",
-          tags: ["Apache", "Nginx", "IIS", "Tomcat", "AWS EC2", "OpenSSL"],
+          tags: ["Apache", "Nginx", "IIS", "Tomcat", "OpenSSL"],
           links: { repo: "", writeup: "" }
         },
         {
