@@ -20,22 +20,22 @@ window.PORTFOLIO = {
     {
       id: "featured",
       title: "Featured labs",
-      note: "Three labs I have planned and not started yet. The descriptions are design goals, not results. Each gets a repository and a full write-up once it is built.",
+      note: "My three flagship labs. Each one is marked with its real status: planned labs show design goals, not results, and get a repository and a full write-up once they are built.",
       layout: "featured",
       items: [
         {
           id: "flagship-1",
           title: "Private PKI as code: ACME, mTLS and 24-hour certificates",
-          summary: "Goal: a two-tier internal CA on step-ca that will issue short-lived certificates over ACME to Nginx, Apache and Tomcat, with mutual TLS between services and no manual renewals.",
+          summary: "A two-tier private CA on step-ca that issues 24-hour certificates over ACME to Nginx, with mutual TLS for clients, automated renewal and expiry monitoring. Built and tested on Kali Linux.",
           category: "PKI/TLS",
-          status: "Planned",
-          tags: ["step-ca", "ACME", "mTLS", "YubiKey PIV", "Prometheus", "Grafana"],
+          status: "Published",
+          tags: ["step-ca", "ACME", "mTLS", "Nginx", "OpenSSL", "Bash"],
           highlights: [
-            "Offline root and online intermediate, with a written design note on lifetimes and revocation",
-            "Expiry and renewal metrics with alerting, plus CA-outage failure drills",
-            "Planned around the CA/Browser Forum move to 100-day and 47-day certificates"
+            "ECDSA root (10 years) and intermediate (5 years), and step-ca runs without the root key",
+            "mTLS tested: no client certificate gets 400, a valid one gets in",
+            "Renewal daemon with Nginx reload, a CA-outage drill and a cron monitor that alerts on expiry and CA health"
           ],
-          links: { repo: "", writeup: "" }
+          links: { repo: "https://github.com/rocha-29/private-pki-lab", writeup: "https://github.com/rocha-29/private-pki-lab#readme" }
         },
         {
           id: "flagship-2",

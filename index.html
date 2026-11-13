@@ -190,27 +190,31 @@
       <!-- BEGIN:labs -->
       <section class="lab-group lab-group--featured" id="labs-featured" aria-labelledby="labs-featured-title">
         <h3 id="labs-featured-title">Featured labs</h3>
-        <p class="group-note">Three labs I have planned and not started yet. The descriptions are design goals, not results. Each gets a repository and a full write-up once it is built.</p>
+        <p class="group-note">My three flagship labs. Each one is marked with its real status: planned labs show design goals, not results, and get a repository and a full write-up once they are built.</p>
         <ul class="lab-list">
         <li class="lab" id="flagship-1" data-category="PKI/TLS">
           <div class="lab-head">
             <h4 class="lab-title">Private PKI as code: ACME, mTLS and 24-hour certificates</h4>
-            <p class="lab-meta"><span class="category">PKI/TLS</span> <span class="badge badge--planned">Planned</span></p>
+            <p class="lab-meta"><span class="category">PKI/TLS</span> <span class="badge badge--published">Published</span></p>
           </div>
-          <p class="lab-summary">Goal: a two-tier internal CA on step-ca that will issue short-lived certificates over ACME to Nginx, Apache and Tomcat, with mutual TLS between services and no manual renewals.</p>
+          <p class="lab-summary">A two-tier private CA on step-ca that issues 24-hour certificates over ACME to Nginx, with mutual TLS for clients, automated renewal and expiry monitoring. Built and tested on Kali Linux.</p>
           <ul class="lab-highlights">
-            <li>Offline root and online intermediate, with a written design note on lifetimes and revocation</li>
-            <li>Expiry and renewal metrics with alerting, plus CA-outage failure drills</li>
-            <li>Planned around the CA/Browser Forum move to 100-day and 47-day certificates</li>
+            <li>ECDSA root (10 years) and intermediate (5 years), and step-ca runs without the root key</li>
+            <li>mTLS tested: no client certificate gets 400, a valid one gets in</li>
+            <li>Renewal daemon with Nginx reload, a CA-outage drill and a cron monitor that alerts on expiry and CA health</li>
           </ul>
           <ul class="tags" aria-label="Tools and topics">
             <li>step-ca</li>
             <li>ACME</li>
             <li>mTLS</li>
-            <li>YubiKey PIV</li>
-            <li>Prometheus</li>
-            <li>Grafana</li>
+            <li>Nginx</li>
+            <li>OpenSSL</li>
+            <li>Bash</li>
           </ul>
+          <p class="lab-links">
+            <a href="https://github.com/rocha-29/private-pki-lab#readme" rel="noopener noreferrer" aria-label="Read the write-up for Private PKI as code: ACME, mTLS and 24-hour certificates">Read the write-up</a>
+            <a href="https://github.com/rocha-29/private-pki-lab" rel="noopener noreferrer" aria-label="View the repository for Private PKI as code: ACME, mTLS and 24-hour certificates">View the repository</a>
+          </p>
         </li>
         <li class="lab" id="flagship-2" data-category="Detection">
           <div class="lab-head">
